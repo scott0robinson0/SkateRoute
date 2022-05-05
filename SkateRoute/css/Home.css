@@ -1,0 +1,247 @@
+* {box-sizing: border-box; padding: 0}
+
+body { background-color: lightgray; }
+
+.container {
+  position: relative;
+  background-color: #FFFFFF;
+  font-family: arial;
+  width: 100%;
+  height: 100%;
+}
+
+.topBar {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: solid 2px;
+  padding: 0.5em;
+  position: sticky;
+  background-color: #FFFFFF;
+  top: 0;
+}
+
+#title {
+  display: inline-block;
+  transform: translateY(10%);
+}
+
+.message {
+  display: inline-block;
+  float: right;
+}
+
+.message:active {
+  background-color: gray;
+}
+
+.message img {
+  width: 25%;
+  float: right;
+}
+
+.bottomBar {
+  background-color: #FFFFFF;
+  clear: both;
+  border-top: solid 2px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.icon {
+  width: 19%;
+  display: inline-block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.icon:active {
+  background-color: gray;
+}
+
+.icon img {
+  width: 2em;
+  margin: auto;
+  display: block;
+}
+
+/* Home */
+
+#home {
+  background-color: lightgray;
+  height: 100%;
+  padding-bottom: 3.5em;
+}
+
+.post {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  margin: auto;
+}
+
+@media only screen and (min-width: 600px) {
+.post {
+    width: 50%;
+  }
+}
+
+.postMain {
+  display: block;
+}
+
+.postMain img {
+  width: 100%;
+}
+
+.postTop {
+  display: flex;
+  align-items: center;
+}
+
+.postTop img {
+  margin: 0.25em;
+}
+
+.postMain img{
+  width: 100%;
+}
+
+.postBottom p{
+  display: inline-block;
+  padding-left: 0.25em;
+}
+.postBottom img {
+  float: right;
+  margin-right: 0.25em;
+}
+
+.like0 {
+  width: 20px;
+}
+
+.like1 {
+  width: 20px;
+  display: none;
+}
+
+.like0:hover {
+  cursor: pointer;
+}
+
+.like1:hover {
+  cursor: pointer;
+}
+#commentnumber:hover {
+  cursor: pointer;
+}
+
+.postcomments {
+  display: none;
+  padding-left: 0.25em;
+}
+
+.postcomments p {
+  margin: 0 0 0.25em 1.5em;
+}
+
+.nameAndPFP {
+  display: flex;
+  align-items: center;
+}
+
+.nameAndPFP img{
+  margin-right: 0.25em;
+}
+
+#user1post {
+  display: none;
+  padding-left: 0.25em;
+}
+
+#user1post p {
+  margin: 0 0 0.25em 1.5em;
+}
+
+/* Map */
+
+#map {
+  display: inline-block;
+  height: 850px;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  #map {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+#mapPage {
+  display: none;
+}
+
+#pingSelectors {
+  display: inline-block;
+  position: absolute;
+  height: 500px;
+  width: 50%;
+}
+
+.pingSelector {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+
+.pingSelector button{
+  width: 100%;
+  padding: 1em;
+}
+
+.pingSelector select{
+  width: 100%;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+  #pingSelectors {
+    width: 100%;
+    position: relative;
+  }
+}
+
+#markerbutton {
+  height: 100%;
+  width: 100%;
+}
+
+/* Search */
+
+#search {
+  display: none;
+}
+
+#search input {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid gray;
+  float: left;
+  width: 100%;
+  background: #f1f1f1;
+}
+
+#profile {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+.profilepicture {
+    width: 2em;
+}
